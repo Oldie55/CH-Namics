@@ -1,17 +1,8 @@
 .mod-zh {
-    margin: 20px;
-    background-color: red;
-    padding: 15px;
-    border: 15px black solid;
-
-
-    &__titel {
-        font-size: 80px;
-        margin-bottom: 15px;
-        color: darkred;
-        text-align: center;
-        margin-top: 25px;
-    }
+    margin: 0;
+    background-color: @color-light-yellow;
+    padding: 5px;
+    border-radius: @border-radius-size;
 
     &__container {
         width: 33.3%;
@@ -23,53 +14,70 @@
         width: 100px;
         border-radius: 50%;
         margin-left: 16px;
-        border: 5px #F2F2F2 solid;
+        border: 5px @color-light-gray solid;
+
+        &:hover {
+            border: 5px @color-light-brown solid;
+        }
     }
 
-    &__member-picture:hover {
-        border: 5px peru solid;
+    /*
+    &__member-link {
+        text-decoration: none;
     }
-
-    &__qname {
-        text-align: center;
-        font-size: 40px;
-        margin-bottom: 8px;
-        border-radius: 10px;
-    }
+    */
 
     &__list {
-        background-color: #BCF5A9;
+        background-color: @color-light-green;
         margin-top: 0;
         margin-bottom: 25px;
         list-style: none;
-        border-radius: 10px;
+        border-radius: @border-radius-size;
+
+        &--mitte {
+            background-color: @color-light-blue;
+        }
+
+        &--hinten {
+            background-color: @color-light-pink;
+        }
     }
 
     &__member {
         padding-left: 20px;
         padding-top: 20px;
-    }
 
-    &__member:hover {
-        background-color: #F2F2F2;
+        &:hover {
+            background-color: @color-light-gray;
+        }
     }
 
     &__member-name {
-        color: #0080FF;
+        color: @color-blue;
         font-size: 30px;
         margin: 15px 0 0 0;
-    }
 
-    &__member-name--lady {
-        color: #F781D8;
+        &--lady {
+            color: @color-pink;
+        }
     }
 
     &__member-description {
-        color: #AC58FA;
+        color: @color-purple;
         font-size: 15px;
         margin-top: 0;
         margin-bottom: 0;
         font-weight: 600;
+
+        &--extra {
+            color: @color-black;
+            margin-top: 5px;
+            font-weight: 300;
+        }
+
+        &--no-info {
+            color: @color-red;
+        }
     }
 
     &__member-caption {
@@ -78,48 +86,33 @@
         text-align: center;
     }
 
-    &__member-description--extra {
-        color: #2E2E2E;
-        margin-top: 5px;
-        font-weight: 300;
-    }
+    &__qname {
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 8px;
+        border-radius: @border-radius-size;
 
-    &_member-description--no-info {
-        color: red;
-    }
+        &--vorne {
+            background-color: @color-light-green;
+        }
 
-    &__qname--vorne {
-        background-color: #BCF5A9;
-    }
+        &--mitte {
+            background-color: @color-light-blue;
+        }
 
-    &__list--mitte {
-        background-color: #A9F5F2;
-    }
-
-    &__qname--mitte {
-        background-color: #A9F5F2;
-    }
-
-    & .zh-hinten {
-        background-color: lightblue;
-    }
-
-    &__list--hinten {
-        background-color: #F5A9BC;
-    }
-
-    &__qname--hinten {
-        background-color: #F5A9BC;
+        &--hinten {
+            background-color: @color-light-pink;
+        }
     }
 
     &__member__left {
         float: left;
-        width: 25%;
+        width: 35%;
     }
 
     &__member__right {
         float: right;
-        width: 75%;
+        width: 65%;
     }
 
     .endfloat {

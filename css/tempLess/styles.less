@@ -1,17 +1,261 @@
-.mod-zh {
-    margin: 20px;
-    background-color: red;
-    padding: 15px;
-    border: 15px black solid;
+/*
+Namics Mitarbeiter
+ */
+
+@color-black: black;
+@color-blue: #0080FF;
+@color-light-blue: #A9F5F2;
+@color-pink: #F781D8;
+@color-light-pink: #F5A9BC;
+@color-purple: #AC58FA;
+@color-red: #ff0002;
+@color-dark-red: darkred;
+@color-light-gray: #F2F2F2;
+@color-light-yellow: lightyellow;
+@color-light-brown: peru;
+@color-light-green: #BCF5A9;
 
 
-    &__titel {
-        font-size: 80px;
-        margin-bottom: 15px;
-        color: darkred;
-        text-align: center;
-        margin-top: 25px;
+/*
+Stewie Griffin
+ */
+
+@color-skin: #FAD7BB;
+@color-white: #FFFFFF;
+
+body {
+    margin: 0;
+    background-color: #0B3861;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+@border-radius-size: 20px;
+.mod-stewie {
+  position: relative;
+  height: 350px;
+  width: 600px;
+  background-color: @color-skin;
+  border-radius: 50%;
+  margin: 100px auto 0 auto;
+  border: 3px @color-black solid;
+
+  &:hover {
+    .mod-stewie__eye__lid {
+      height: 104px;
+      width: 104px;
+      border-radius: 50%;
+
+      border-bottom: 0;
+
+      transition: height 0.05s ease-in;
     }
+  }
+
+  &__eyes {
+    height: 100%;
+
+  }
+
+  &__eye {
+    position: absolute;
+    height: 110px;
+    width: 110px;
+    top: 100px;
+
+    &--left {
+      left: 55px;
+    }
+
+    &--right {
+      right: 100px;
+      top: 105px;
+    }
+
+    &__white {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      border-radius: 50%;
+      border: 3px @color-black solid;
+      background-color: @color-white;
+    }
+
+    &__pupil {
+      height: 12px;
+      width: 12px;
+      border-radius: 50%;
+      background-color: @color-black;
+      position: absolute;
+      top: 50px;
+      left: 70px;
+    }
+
+    &__lid {
+      position: absolute;
+      height: 52px;
+      width: 104px;
+      border-radius: 90px 90px 0 0;
+      background: @color-skin;
+      border-bottom: 3px @color-black solid;
+      left: 3px;
+      top: 3px;
+    }
+
+    &__brow {
+      position: absolute;
+      height: 4px;
+      width: 80px;
+      background-color: @color-black;
+      border-radius: 100%;
+      top: -25px;
+
+      &--left {
+        left: 20px;
+        top: -13px;
+      }
+
+      &--right {
+        right: 20px;
+        top: -17px;
+      }
+
+    }
+
+  }
+
+  &__ears {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+  }
+
+  &__ear {
+    height: 45px;
+    width: 45px;
+    background-color: @color-skin;
+    border-radius: 50%;
+    border: 3px @color-black solid;
+    position: absolute;
+    top: 140px;
+
+    &--left {
+      left: -30px;
+    }
+
+    &--right {
+      right: -30px;
+    }
+
+  }
+
+  &__hairs {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+  }
+
+  &__hair {
+    position: absolute;
+    height: 4px;
+    background-color: @color-black;
+
+    &--one {
+      width: 10px;
+      top: 100px;
+      left: 24px;
+      transform: rotate(75deg);
+    }
+
+    &--two {
+      width: 20px;
+      top: 62px;
+      left: 70px;
+      transform: rotate(80deg);
+    }
+
+    &--three {
+      width: 30px;
+      top: 33px;
+      left: 130px;
+      transform: rotate(110deg);
+    }
+
+    &--four {
+      width: 30px;
+      top: 17px;
+      left: 195px;
+      transform: rotate(115deg);
+    }
+
+    &--five {
+      width: 30px;
+      top: 10px;
+      left: 264px;
+      transform: rotate(120deg);
+    }
+
+    &--six {
+      width: 33px;
+      top: 13px;
+      left: 332px;
+      transform: rotate(130deg);
+    }
+
+    &--seven {
+      width: 30px;
+      top: 23px;
+      left: 400px;
+      transform: rotate(145deg);
+    }
+
+    &--eight {
+      width: 25px;
+      top: 48px;
+      left: 477px;
+      transform: rotate(160deg);
+    }
+
+    &--nine {
+      width: 25px;
+      top: 91px;
+      left: 536px;
+      transform: rotate(175deg);
+    }
+  }
+
+  &__nose {
+
+  }
+
+  &__mouth {
+
+  }
+
+}
+.mod-title {
+  background-color: @color-light-yellow;
+  border-radius: @border-radius-size;
+
+  &__main {
+    font-size: 80px;
+    margin-bottom: 15px;
+    color: @color-dark-red;
+    text-align: center;
+    margin-top: 25px;
+  }
+
+
+}
+.mod-zh {
+    margin: 0;
+    background-color: @color-light-yellow;
+    padding: 5px;
+    border-radius: @border-radius-size;
 
     &__container {
         width: 33.3%;
@@ -23,53 +267,70 @@
         width: 100px;
         border-radius: 50%;
         margin-left: 16px;
-        border: 5px #F2F2F2 solid;
+        border: 5px @color-light-gray solid;
+
+        &:hover {
+            border: 5px @color-light-brown solid;
+        }
     }
 
-    &__member-picture:hover {
-        border: 5px peru solid;
+    /*
+    &__member-link {
+        text-decoration: none;
     }
-
-    &__qname {
-        text-align: center;
-        font-size: 40px;
-        margin-bottom: 8px;
-        border-radius: 10px;
-    }
+    */
 
     &__list {
-        background-color: #BCF5A9;
+        background-color: @color-light-green;
         margin-top: 0;
         margin-bottom: 25px;
         list-style: none;
-        border-radius: 10px;
+        border-radius: @border-radius-size;
+
+        &--mitte {
+            background-color: @color-light-blue;
+        }
+
+        &--hinten {
+            background-color: @color-light-pink;
+        }
     }
 
     &__member {
         padding-left: 20px;
         padding-top: 20px;
-    }
 
-    &__member:hover {
-        background-color: #F2F2F2;
+        &:hover {
+            background-color: @color-light-gray;
+        }
     }
 
     &__member-name {
-        color: #0080FF;
+        color: @color-blue;
         font-size: 30px;
         margin: 15px 0 0 0;
-    }
 
-    &__member-name--lady {
-        color: #F781D8;
+        &--lady {
+            color: @color-pink;
+        }
     }
 
     &__member-description {
-        color: #AC58FA;
+        color: @color-purple;
         font-size: 15px;
         margin-top: 0;
         margin-bottom: 0;
         font-weight: 600;
+
+        &--extra {
+            color: @color-black;
+            margin-top: 5px;
+            font-weight: 300;
+        }
+
+        &--no-info {
+            color: @color-red;
+        }
     }
 
     &__member-caption {
@@ -78,55 +339,36 @@
         text-align: center;
     }
 
-    &__member-description--extra {
-        color: #2E2E2E;
-        margin-top: 5px;
-        font-weight: 300;
-    }
+    &__qname {
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 8px;
+        border-radius: @border-radius-size;
 
-    &_member-description--no-info {
-        color: red;
-    }
+        &--vorne {
+            background-color: @color-light-green;
+        }
 
-    &__qname--vorne {
-        background-color: #BCF5A9;
-    }
+        &--mitte {
+            background-color: @color-light-blue;
+        }
 
-    &__list--mitte {
-        background-color: #A9F5F2;
-    }
-
-    &__qname--mitte {
-        background-color: #A9F5F2;
-    }
-
-    & .zh-hinten {
-        background-color: lightblue;
-    }
-
-    &__list--hinten {
-        background-color: #F5A9BC;
-    }
-
-    &__qname--hinten {
-        background-color: #F5A9BC;
+        &--hinten {
+            background-color: @color-light-pink;
+        }
     }
 
     &__member__left {
         float: left;
-        width: 25%;
+        width: 35%;
     }
 
     &__member__right {
         float: right;
-        width: 75%;
+        width: 65%;
     }
 
     .endfloat {
         clear: both;
     }
-}
-body {
-    margin: 0;
-    background-color: #0B3861;
 }

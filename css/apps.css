@@ -52,18 +52,202 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
 }
-.mod-zh {
-  margin: 20px;
-  background-color: red;
-  padding: 15px;
-  border: 15px black solid;
+/*
+Namics Mitarbeiter
+ */
+/*
+Stewie Griffin
+ */
+body {
+  margin: 0;
+  background-color: #0B3861;
 }
-.mod-zh__titel {
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.mod-stewie {
+  position: relative;
+  height: 350px;
+  width: 600px;
+  background-color: #FAD7BB;
+  border-radius: 50%;
+  margin: 100px auto 0 auto;
+  border: 3px black solid;
+}
+.mod-stewie:hover .mod-stewie__eye__lid {
+  height: 104px;
+  width: 104px;
+  border-radius: 50%;
+  border-bottom: 0;
+  transition: height 0.05s ease-in;
+}
+.mod-stewie__eyes {
+  height: 100%;
+}
+.mod-stewie__eye {
+  position: absolute;
+  height: 110px;
+  width: 110px;
+  top: 100px;
+}
+.mod-stewie__eye--left {
+  left: 55px;
+}
+.mod-stewie__eye--right {
+  right: 100px;
+  top: 105px;
+}
+.mod-stewie__eye__white {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  border: 3px black solid;
+  background-color: #FFFFFF;
+}
+.mod-stewie__eye__pupil {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-color: black;
+  position: absolute;
+  top: 50px;
+  left: 70px;
+}
+.mod-stewie__eye__lid {
+  position: absolute;
+  height: 52px;
+  width: 104px;
+  border-radius: 90px 90px 0 0;
+  background: #FAD7BB;
+  border-bottom: 3px black solid;
+  left: 3px;
+  top: 3px;
+}
+.mod-stewie__eye__brow {
+  position: absolute;
+  height: 4px;
+  width: 80px;
+  background-color: black;
+  border-radius: 100%;
+  top: -25px;
+}
+.mod-stewie__eye__brow--left {
+  left: 20px;
+  top: -13px;
+}
+.mod-stewie__eye__brow--right {
+  right: 20px;
+  top: -17px;
+}
+.mod-stewie__ears {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+.mod-stewie__ear {
+  height: 45px;
+  width: 45px;
+  background-color: #FAD7BB;
+  border-radius: 50%;
+  border: 3px black solid;
+  position: absolute;
+  top: 140px;
+}
+.mod-stewie__ear--left {
+  left: -30px;
+}
+.mod-stewie__ear--right {
+  right: -30px;
+}
+.mod-stewie__hairs {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+}
+.mod-stewie__hair {
+  position: absolute;
+  height: 4px;
+  background-color: black;
+}
+.mod-stewie__hair--one {
+  width: 10px;
+  top: 100px;
+  left: 24px;
+  transform: rotate(75deg);
+}
+.mod-stewie__hair--two {
+  width: 20px;
+  top: 62px;
+  left: 70px;
+  transform: rotate(80deg);
+}
+.mod-stewie__hair--three {
+  width: 30px;
+  top: 33px;
+  left: 130px;
+  transform: rotate(110deg);
+}
+.mod-stewie__hair--four {
+  width: 30px;
+  top: 17px;
+  left: 195px;
+  transform: rotate(115deg);
+}
+.mod-stewie__hair--five {
+  width: 30px;
+  top: 10px;
+  left: 264px;
+  transform: rotate(120deg);
+}
+.mod-stewie__hair--six {
+  width: 33px;
+  top: 13px;
+  left: 332px;
+  transform: rotate(130deg);
+}
+.mod-stewie__hair--seven {
+  width: 30px;
+  top: 23px;
+  left: 400px;
+  transform: rotate(145deg);
+}
+.mod-stewie__hair--eight {
+  width: 25px;
+  top: 48px;
+  left: 477px;
+  transform: rotate(160deg);
+}
+.mod-stewie__hair--nine {
+  width: 25px;
+  top: 91px;
+  left: 536px;
+  transform: rotate(175deg);
+}
+.mod-title {
+  background-color: lightyellow;
+  border-radius: 20px;
+}
+.mod-title__main {
   font-size: 80px;
   margin-bottom: 15px;
   color: darkred;
   text-align: center;
   margin-top: 25px;
+}
+.mod-zh {
+  margin: 0;
+  background-color: lightyellow;
+  padding: 5px;
+  border-radius: 20px;
+  /*
+    &__member-link {
+        text-decoration: none;
+    }
+    */
 }
 .mod-zh__container {
   width: 33.3%;
@@ -79,18 +263,18 @@ html {
 .mod-zh__member-picture:hover {
   border: 5px peru solid;
 }
-.mod-zh__qname {
-  text-align: center;
-  font-size: 40px;
-  margin-bottom: 8px;
-  border-radius: 10px;
-}
 .mod-zh__list {
   background-color: #BCF5A9;
   margin-top: 0;
   margin-bottom: 25px;
   list-style: none;
-  border-radius: 10px;
+  border-radius: 20px;
+}
+.mod-zh__list--mitte {
+  background-color: #A9F5F2;
+}
+.mod-zh__list--hinten {
+  background-color: #F5A9BC;
 }
 .mod-zh__member {
   padding-left: 20px;
@@ -114,49 +298,42 @@ html {
   margin-bottom: 0;
   font-weight: 600;
 }
+.mod-zh__member-description--extra {
+  color: black;
+  margin-top: 5px;
+  font-weight: 300;
+}
+.mod-zh__member-description--no-info {
+  color: #ff0002;
+}
 .mod-zh__member-caption {
   font-size: 13px;
   margin-bottom: 10px;
   text-align: center;
 }
-.mod-zh__member-description--extra {
-  color: #2E2E2E;
-  margin-top: 5px;
-  font-weight: 300;
-}
-.mod-zh_member-description--no-info {
-  color: red;
+.mod-zh__qname {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 8px;
+  border-radius: 20px;
 }
 .mod-zh__qname--vorne {
   background-color: #BCF5A9;
 }
-.mod-zh__list--mitte {
-  background-color: #A9F5F2;
-}
 .mod-zh__qname--mitte {
   background-color: #A9F5F2;
-}
-.mod-zh .zh-hinten {
-  background-color: lightblue;
-}
-.mod-zh__list--hinten {
-  background-color: #F5A9BC;
 }
 .mod-zh__qname--hinten {
   background-color: #F5A9BC;
 }
 .mod-zh__member__left {
   float: left;
-  width: 25%;
+  width: 35%;
 }
 .mod-zh__member__right {
   float: right;
-  width: 75%;
+  width: 65%;
 }
 .mod-zh .endfloat {
   clear: both;
-}
-body {
-  margin: 0;
-  background-color: #0B3861;
 }
