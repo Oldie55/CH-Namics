@@ -60,7 +60,7 @@ Stewie Griffin
  */
 body {
   margin: 0;
-  background-color: #0B3861;
+  background-color: #FFFFFF;
 }
 .container {
   width: 1200px;
@@ -226,6 +226,114 @@ body {
   top: 91px;
   left: 536px;
   transform: rotate(175deg);
+}
+.mod-stewie__hair--eins {
+  width: 15px;
+  height: 8px;
+  border-radius: 90px 90px 0 0;
+  background-color: transparent;
+  border-top: 4px black solid;
+  border-left: 4px black solid;
+  border-right: 4px black solid;
+  top: 86px;
+  left: 22px;
+  transform: rotate(-45deg);
+}
+.mod-stewie__hair--zwei {
+  width: 17px;
+  height: 9px;
+  border-radius: 90px 90px 0 0;
+  background-color: transparent;
+  border-top: 4px black solid;
+  border-left: 4px black solid;
+  border-right: 4px black solid;
+  top: 43px;
+  left: 74px;
+  transform: rotate(-30deg);
+}
+.mod-stewie__hair--drei {
+  width: 17px;
+  height: 9px;
+  border-radius: 90px 90px 0 0;
+  background-color: transparent;
+  border-top: 4px black solid;
+  border-left: 4px black solid;
+  border-right: 4px black solid;
+  top: 11px;
+  left: 148px;
+  transform: rotate(-18deg);
+}
+.mod-stewie__hair--vier {
+  width: 17px;
+  height: 8px;
+  border-radius: 90px 90px 0 0;
+  background-color: transparent;
+  border-top: 4px black solid;
+  border-left: 4px black solid;
+  border-right: 4px black solid;
+  top: -4px;
+  left: 214px;
+  transform: rotate(-18deg);
+}
+.mod-stewie__hair--fuenf {
+  width: 19px;
+  height: 8px;
+  border-radius: 90px 90px 0 0;
+  background-color: transparent;
+  border-top: 4px black solid;
+  border-left: 4px black solid;
+  border-right: 4px black solid;
+  top: -9px;
+  left: 286px;
+  transform: rotate(8deg);
+}
+.mod-stewie__hair--sechs {
+  width: 18px;
+  height: 8px;
+  border-radius: 90px 90px 0 0;
+  background-color: transparent;
+  border-top: 4px black solid;
+  border-left: 4px black solid;
+  border-right: 4px black solid;
+  top: -4px;
+  left: 357px;
+  transform: rotate(0deg);
+}
+.mod-stewie__hair--sieben {
+  width: 18px;
+  height: 8px;
+  border-radius: 90px 90px 0 0;
+  background-color: transparent;
+  border-top: 4px black solid;
+  border-left: 4px black solid;
+  border-right: 4px black solid;
+  top: 11px;
+  left: 427px;
+  transform: rotate(25deg);
+}
+.mod-stewie__hair--acht {
+  width: 18px;
+  height: 7px;
+  border-radius: 90px 90px 0 0;
+  background-color: transparent;
+  border-top: 4px black solid;
+  border-left: 4px black solid;
+  border-right: 4px black solid;
+  top: 43px;
+  left: 501px;
+  transform: rotate(34deg);
+}
+.mod-stewie__hair--neun {
+  width: 18px;
+  height: 8px;
+  border-radius: 90px 90px 0 0;
+  background-color: transparent;
+  border-top: 4px black solid;
+  border-left: 4px black solid;
+  border-right: 4px black solid;
+  top: 91px;
+  left: 560px;
+  transform: rotate(46deg);
 }
 .mod-title {
   background-color: lightyellow;
