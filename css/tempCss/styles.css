@@ -281,6 +281,12 @@ body {
   left: 560px;
   transform: rotate(46deg);
 }
+.mod-stewie__nparts {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+}
 .mod-stewie__nose {
   position: absolute;
   height: 100%;
@@ -304,46 +310,6 @@ body {
   top: 176px;
   left: 232px;
   transform: rotate(130deg);
-}
-.mod-stewie__mouth {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-}
-.mod-stewie__mouth--top {
-  height: 3px;
-  width: 18px;
-  background-color: black;
-  border-radius: 40%;
-  top: 252px;
-  left: 252px;
-  transform: rotate(130deg);
-}
-.mod-stewie__mouth--top-two {
-  height: 3px;
-  width: 35px;
-  background-color: black;
-  border-radius: 40%;
-  top: 259px;
-  left: 255px;
-}
-.mod-stewie__mouth--bottom {
-  height: 3px;
-  width: 15px;
-  background-color: black;
-  border-radius: 40%;
-  top: 300px;
-  left: 266px;
-  transform: rotate(56deg);
-}
-.mod-stewie__mouth--bottom-two {
-  height: 3px;
-  width: 15px;
-  background-color: black;
-  border-radius: 40%;
-  top: 294px;
-  left: 269px;
 }
 .mod-title {
   background-color: lightyellow;
