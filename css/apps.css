@@ -142,25 +142,64 @@ body {
   top: -17px;
 }
 .mod-stewie__ears {
-  position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
 }
 .mod-stewie__ear {
-  height: 45px;
-  width: 45px;
-  background-color: #FAD7BB;
-  border-radius: 50%;
-  border: 3px black solid;
   position: absolute;
   top: 140px;
 }
 .mod-stewie__ear--left {
   left: -30px;
+  height: 45px;
+  width: 45px;
+  background-color: #FAD7BB;
+  border-radius: 50%;
+  border: 3px black solid;
+}
+.mod-stewie__ear--left-two {
+  top: 147px;
+  height: 33px;
+  width: 33px;
+  border-radius: 50%;
+  background-color: #FAD7BB;
+}
+.mod-stewie__ear--left-three {
+  width: 12px;
+  height: 8px;
+  border-radius: 90px 90px 0 0;
+  background-color: transparent;
+  border-top: 4px black solid;
+  transform: rotate(35deg);
+  top: 156px;
+  left: -12px;
 }
 .mod-stewie__ear--right {
   right: -30px;
+  height: 45px;
+  width: 45px;
+  background-color: #FAD7BB;
+  border-radius: 50%;
+  border: 3px black solid;
+}
+.mod-stewie__ear--right-two {
+  right: 0;
+  top: 147px;
+  height: 33px;
+  width: 33px;
+  border-radius: 50%;
+  background-color: #FAD7BB;
+}
+.mod-stewie__ear--right-three {
+  width: 16px;
+  height: 8px;
+  border-radius: 90px 90px 0 0;
+  background-color: transparent;
+  border-top: 4px black solid;
+  transform: rotate(-15deg);
+  right: -15px;
+  top: 156px;
 }
 .mod-stewie__hairs {
   position: absolute;

@@ -129,352 +129,395 @@ body {
   }
 
   &__ears {
-    position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
   }
 
   &__ear {
-    height: 45px;
-    width: 45px;
-    background-color: @color-skin;
-    border-radius: 50%;
-    border: 3px @color-black solid;
     position: absolute;
     top: 140px;
 
     &--left {
       left: -30px;
+      height: 45px;
+      width: 45px;
+      background-color: @color-skin;
+      border-radius: 50%;
+      border: 3px @color-black solid;
+    }
+
+    &--left-two {
+      top: 147px;
+      height: 33px;
+      width: 33px;
+      border-radius: 50%;
+      background-color: @color-skin;
+    }
+
+    &--left-three {
+      width: 12px;
+      height: 8px;
+      border-radius: 90px 90px 0 0;
+      background-color: transparent;
+      border-top: 4px @color-black solid;
+      transform: rotate(35deg);
+      top: 156px;
+      left: -12px;
+
     }
 
     &--right {
       right: -30px;
+      height: 45px;
+      width: 45px;
+      background-color: @color-skin;
+      border-radius: 50%;
+      border: 3px @color-black solid;
     }
 
-  }
-
-  &__hairs {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-  }
-
-  &__hair {
-    position: absolute;
-    height: 4px;
-    background-color: @color-black;
-
-    &--one {
-      width: 10px;
-      top: 100px;
-      left: 24px;
-      transform: rotate(75deg);
-    }
-
-    &--two {
-      width: 20px;
-      top: 62px;
-      left: 70px;
-      transform: rotate(80deg);
-    }
-
-    &--three {
-      width: 30px;
-      top: 33px;
-      left: 130px;
-      transform: rotate(110deg);
-    }
-
-    &--four {
-      width: 30px;
-      top: 17px;
-      left: 195px;
-      transform: rotate(115deg);
-    }
-
-    &--five {
-      width: 30px;
-      top: 10px;
-      left: 264px;
-      transform: rotate(120deg);
-    }
-
-    &--six {
+    &--right-two {
+      right: 0;
+      top: 147px;
+      height: 33px;
       width: 33px;
-      top: 13px;
-      left: 332px;
-      transform: rotate(130deg);
+      border-radius: 50%;
+      background-color: @color-skin;
     }
 
-    &--seven {
-      width: 30px;
-      top: 23px;
-      left: 400px;
-      transform: rotate(145deg);
-    }
-
-    &--eight {
-      width: 25px;
-      top: 48px;
-      left: 477px;
-      transform: rotate(160deg);
-    }
-
-    &--nine {
-      width: 25px;
-      top: 91px;
-      left: 536px;
-      transform: rotate(175deg);
-    }
-
-    &--eins {
-      width: 15px;
+    &--right-three {
+      width: 16px;
       height: 8px;
       border-radius: 90px 90px 0 0;
       background-color: transparent;
       border-top: 4px @color-black solid;
-      border-left: 4px @color-black solid;
-      border-right: 4px @color-black solid;
-      top: 86px;
-      left: 22px;
-      transform: rotate(-45deg);
-    }
-
-    &--zwei {
-      width: 17px;
-      height: 9px;
-      border-radius: 90px 90px 0 0;
-      background-color: transparent;
-      border-top: 4px @color-black solid;
-      border-left: 4px @color-black solid;
-      border-right: 4px @color-black solid;
-      top: 43px;
-      left: 74px;
-      transform: rotate(-30deg);
-    }
-
-    &--drei {
-      width: 17px;
-      height: 9px;
-      border-radius: 90px 90px 0 0;
-      background-color: transparent;
-      border-top: 4px @color-black solid;
-      border-left: 4px @color-black solid;
-      border-right: 4px @color-black solid;
-      top: 11px;
-      left: 148px;
-      transform: rotate(-18deg);
-    }
-
-    &--vier {
-      width: 17px;
-      height: 8px;
-      border-radius: 90px 90px 0 0;
-      background-color: transparent;
-      border-top: 4px @color-black solid;
-      border-left: 4px @color-black solid;
-      border-right: 4px @color-black solid;
-      top: -4px;
-      left: 214px;
-      transform: rotate(-18deg);
-    }
-
-    &--fuenf {
-      width: 19px;
-      height: 8px;
-      border-radius: 90px 90px 0 0;
-      background-color: transparent;
-      border-top: 4px @color-black solid;
-      border-left: 4px @color-black solid;
-      border-right: 4px @color-black solid;
-      top: -9px;
-      left: 286px;
-      transform: rotate(8deg);
-    }
-
-    &--sechs {
-      width: 18px;
-      height: 8px;
-      border-radius: 90px 90px 0 0;
-      background-color: transparent;
-      border-top: 4px @color-black solid;
-      border-left: 4px @color-black solid;
-      border-right: 4px @color-black solid;
-      top: -4px;
-      left: 357px;
-      transform: rotate(0deg);
-    }
-
-    &--sieben {
-      width: 18px;
-      height: 8px;
-      border-radius: 90px 90px 0 0;
-      background-color: transparent;
-      border-top: 4px @color-black solid;
-      border-left: 4px @color-black solid;
-      border-right: 4px @color-black solid;
-      top: 11px;
-      left: 427px;
-      transform: rotate(25deg);
-    }
-
-    &--acht {
-      width: 18px;
-      height: 7px;
-      border-radius: 90px 90px 0 0;
-      background-color: transparent;
-      border-top: 4px @color-black solid;
-      border-left: 4px @color-black solid;
-      border-right: 4px @color-black solid;
-      top: 43px;
-      left: 501px;
-      transform: rotate(34deg);
-    }
-
-    &--neun {
-      width: 18px;
-      height: 8px;
-      border-radius: 90px 90px 0 0;
-      background-color: transparent;
-      border-top: 4px @color-black solid;
-      border-left: 4px @color-black solid;
-      border-right: 4px @color-black solid;
-      top: 91px;
-      left: 560px;
-      transform: rotate(46deg);
+      transform: rotate(-15deg);
+      right: -15px;
+      top: 156px;
     }
   }
 
-  &__nose {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-
-    &--first {
-      height: 3px;
-      width: 25px;
-      background-color: @color-black;
-      border-radius: 0 40% 40% 0;
-      top: 199px;
-      left: 235px;
-      transform: rotate(46deg);
+    &__hairs {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
     }
 
-    &--second {
-      height: 3px;
-      width: 40px;
-      background-color: @color-black;
-      border-radius: 40% 0 0 40%;
-      top: 176px;
-      left: 232px;
-      transform: rotate(130deg);
-    }
-  }
-
-  &__mouth {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-
-    &--one {
-      height: 3px;
-      width: 18px;
-      background-color: @color-black;
-      border-radius: 40%;
-      top: 231px;
-      left: 235px;
-      transform: rotate(140deg);
-    }
-
-    &--two {
-      height: 3px;
-      width: 35px;
-      background-color: @color-black;
-      border-radius: 40%;
-      top: 237px;
-      left: 237px;
-    }
-
-    &--three {
-      height: 3px;
-      width: 13px;
-      background-color: @color-black;
-      border-radius: 40%;
-      top: 285px;
-      left: 254px;
-      transform: rotate(46deg);
-    }
-
-    &--four {
-      height: 3px;
-      width: 20px;
-      background-color: @color-black;
-      border-radius: 40%;
-      top: 280px;
-      left: 255px;
-    }
-
-    &--five {
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-width: 33px 33px 0 0;
-      border-color: @color-black transparent transparent transparent;
-      top: 226px;
-      left: 303px;
-      transform: rotate(-27deg);
-    }
-
-    &--six {
-      width: 55px;
-      height: 25px;
-      border-radius: 90px 90px 0 0;
-      background-color: @color-black;
-      top: 252.5px;
-      left: 268px;
-      transform: rotate(140deg);
-    }
-
-    &--seven {
-      height: 46px;
-      width: 22px;
-      top: 237px;
-      left: 264px;
-      background-color: @color-black;
-    }
-
-    &--eight {
-      height: 7px;
-      width: 24px;
-      top: 236px;
-      left: 281px;
-      background-color: @color-black;
-      transform: rotate(-20deg);
-    }
-
-    &--nine {
-      height: 20px;
-      width: 32px;
-      top: 237px;
-      left: 271px;
-      background-color: @color-black;
-    }
-
-    &--ten {
-      width: 15px;
+    &__hair {
+      position: absolute;
       height: 4px;
-      background-color: @color-tongue;
-      border-radius: 100%;
-      top: 272px;
-      left: 288px;
-      transform: rotate(-33deg);
+      background-color: @color-black;
+
+      &--one {
+        width: 10px;
+        top: 100px;
+        left: 24px;
+        transform: rotate(75deg);
+      }
+
+      &--two {
+        width: 20px;
+        top: 62px;
+        left: 70px;
+        transform: rotate(80deg);
+      }
+
+      &--three {
+        width: 30px;
+        top: 33px;
+        left: 130px;
+        transform: rotate(110deg);
+      }
+
+      &--four {
+        width: 30px;
+        top: 17px;
+        left: 195px;
+        transform: rotate(115deg);
+      }
+
+      &--five {
+        width: 30px;
+        top: 10px;
+        left: 264px;
+        transform: rotate(120deg);
+      }
+
+      &--six {
+        width: 33px;
+        top: 13px;
+        left: 332px;
+        transform: rotate(130deg);
+      }
+
+      &--seven {
+        width: 30px;
+        top: 23px;
+        left: 400px;
+        transform: rotate(145deg);
+      }
+
+      &--eight {
+        width: 25px;
+        top: 48px;
+        left: 477px;
+        transform: rotate(160deg);
+      }
+
+      &--nine {
+        width: 25px;
+        top: 91px;
+        left: 536px;
+        transform: rotate(175deg);
+      }
+
+      &--eins {
+        width: 15px;
+        height: 8px;
+        border-radius: 90px 90px 0 0;
+        background-color: transparent;
+        border-top: 4px @color-black solid;
+        border-left: 4px @color-black solid;
+        border-right: 4px @color-black solid;
+        top: 86px;
+        left: 22px;
+        transform: rotate(-45deg);
+      }
+
+      &--zwei {
+        width: 17px;
+        height: 9px;
+        border-radius: 90px 90px 0 0;
+        background-color: transparent;
+        border-top: 4px @color-black solid;
+        border-left: 4px @color-black solid;
+        border-right: 4px @color-black solid;
+        top: 43px;
+        left: 74px;
+        transform: rotate(-30deg);
+      }
+
+      &--drei {
+        width: 17px;
+        height: 9px;
+        border-radius: 90px 90px 0 0;
+        background-color: transparent;
+        border-top: 4px @color-black solid;
+        border-left: 4px @color-black solid;
+        border-right: 4px @color-black solid;
+        top: 11px;
+        left: 148px;
+        transform: rotate(-18deg);
+      }
+
+      &--vier {
+        width: 17px;
+        height: 8px;
+        border-radius: 90px 90px 0 0;
+        background-color: transparent;
+        border-top: 4px @color-black solid;
+        border-left: 4px @color-black solid;
+        border-right: 4px @color-black solid;
+        top: -4px;
+        left: 214px;
+        transform: rotate(-18deg);
+      }
+
+      &--fuenf {
+        width: 19px;
+        height: 8px;
+        border-radius: 90px 90px 0 0;
+        background-color: transparent;
+        border-top: 4px @color-black solid;
+        border-left: 4px @color-black solid;
+        border-right: 4px @color-black solid;
+        top: -9px;
+        left: 286px;
+        transform: rotate(8deg);
+      }
+
+      &--sechs {
+        width: 18px;
+        height: 8px;
+        border-radius: 90px 90px 0 0;
+        background-color: transparent;
+        border-top: 4px @color-black solid;
+        border-left: 4px @color-black solid;
+        border-right: 4px @color-black solid;
+        top: -4px;
+        left: 357px;
+        transform: rotate(0deg);
+      }
+
+      &--sieben {
+        width: 18px;
+        height: 8px;
+        border-radius: 90px 90px 0 0;
+        background-color: transparent;
+        border-top: 4px @color-black solid;
+        border-left: 4px @color-black solid;
+        border-right: 4px @color-black solid;
+        top: 11px;
+        left: 427px;
+        transform: rotate(25deg);
+      }
+
+      &--acht {
+        width: 18px;
+        height: 7px;
+        border-radius: 90px 90px 0 0;
+        background-color: transparent;
+        border-top: 4px @color-black solid;
+        border-left: 4px @color-black solid;
+        border-right: 4px @color-black solid;
+        top: 43px;
+        left: 501px;
+        transform: rotate(34deg);
+      }
+
+      &--neun {
+        width: 18px;
+        height: 8px;
+        border-radius: 90px 90px 0 0;
+        background-color: transparent;
+        border-top: 4px @color-black solid;
+        border-left: 4px @color-black solid;
+        border-right: 4px @color-black solid;
+        top: 91px;
+        left: 560px;
+        transform: rotate(46deg);
+      }
+    }
+
+    &__nose {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+
+      &--first {
+        height: 3px;
+        width: 25px;
+        background-color: @color-black;
+        border-radius: 0 40% 40% 0;
+        top: 199px;
+        left: 235px;
+        transform: rotate(46deg);
+      }
+
+      &--second {
+        height: 3px;
+        width: 40px;
+        background-color: @color-black;
+        border-radius: 40% 0 0 40%;
+        top: 176px;
+        left: 232px;
+        transform: rotate(130deg);
+      }
+    }
+
+    &__mouth {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+
+      &--one {
+        height: 3px;
+        width: 18px;
+        background-color: @color-black;
+        border-radius: 40%;
+        top: 231px;
+        left: 235px;
+        transform: rotate(140deg);
+      }
+
+      &--two {
+        height: 3px;
+        width: 35px;
+        background-color: @color-black;
+        border-radius: 40%;
+        top: 237px;
+        left: 237px;
+      }
+
+      &--three {
+        height: 3px;
+        width: 13px;
+        background-color: @color-black;
+        border-radius: 40%;
+        top: 285px;
+        left: 254px;
+        transform: rotate(46deg);
+      }
+
+      &--four {
+        height: 3px;
+        width: 20px;
+        background-color: @color-black;
+        border-radius: 40%;
+        top: 280px;
+        left: 255px;
+      }
+
+      &--five {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 33px 33px 0 0;
+        border-color: @color-black transparent transparent transparent;
+        top: 226px;
+        left: 303px;
+        transform: rotate(-27deg);
+      }
+
+      &--six {
+        width: 55px;
+        height: 25px;
+        border-radius: 90px 90px 0 0;
+        background-color: @color-black;
+        top: 252.5px;
+        left: 268px;
+        transform: rotate(140deg);
+      }
+
+      &--seven {
+        height: 46px;
+        width: 22px;
+        top: 237px;
+        left: 264px;
+        background-color: @color-black;
+      }
+
+      &--eight {
+        height: 7px;
+        width: 24px;
+        top: 236px;
+        left: 281px;
+        background-color: @color-black;
+        transform: rotate(-20deg);
+      }
+
+      &--nine {
+        height: 20px;
+        width: 32px;
+        top: 237px;
+        left: 271px;
+        background-color: @color-black;
+      }
+
+      &--ten {
+        width: 15px;
+        height: 4px;
+        background-color: @color-tongue;
+        border-radius: 100%;
+        top: 272px;
+        left: 288px;
+        transform: rotate(-33deg);
+      }
     }
   }
-}
 
 
 .mod-title {
