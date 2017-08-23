@@ -346,13 +346,6 @@ body {
     }
   }
 
-  &__nparts {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-  }
-
   &__nose {
     position: absolute;
     height: 100%;
@@ -381,7 +374,62 @@ body {
     }
 
   &__mouth {
- 
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+
+    &--one {
+      height: 3px;
+      width: 18px;
+      background-color: @color-black;
+      border-radius: 40%;
+      top: 231px;
+      left: 235px;
+      transform: rotate(140deg);
+    }
+
+    &--two {
+      height: 3px;
+      width: 35px;
+      background-color: @color-black;
+      border-radius: 40%;
+      top: 237px;
+      left: 237px;
+    }
+
+    &--three {
+      height: 3px;
+      width: 13px;
+      background-color: @color-black;
+      border-radius: 40%;
+      top: 285px;
+      left: 254px;
+      transform: rotate(46deg);
+    }
+
+    &--four {
+      height: 3px;
+      width: 20px;
+      background-color: @color-black;
+      border-radius: 40%;
+      top: 280px;
+      left: 255px;
+    }
+
+    &--five {
+      width: 30px;
+      top: 10px;
+      left: 264px;
+      transform: rotate(120deg);
+    }
+
+    &--six {
+      width: 33px;
+      top: 13px;
+      left: 332px;
+      transform: rotate(130deg);
+    }
   }
 
 }
