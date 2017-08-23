@@ -400,16 +400,54 @@ body {
   left: 255px;
 }
 .mod-stewie__mouth--five {
-  width: 30px;
-  top: 10px;
-  left: 264px;
-  transform: rotate(120deg);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 33px 33px 0 0;
+  border-color: black transparent transparent transparent;
+  top: 226px;
+  left: 303px;
+  transform: rotate(-27deg);
 }
 .mod-stewie__mouth--six {
-  width: 33px;
-  top: 13px;
-  left: 332px;
-  transform: rotate(130deg);
+  width: 55px;
+  height: 25px;
+  border-radius: 90px 90px 0 0;
+  background-color: black;
+  top: 252.5px;
+  left: 268px;
+  transform: rotate(140deg);
+}
+.mod-stewie__mouth--seven {
+  height: 46px;
+  width: 22px;
+  top: 237px;
+  left: 264px;
+  background-color: black;
+}
+.mod-stewie__mouth--eight {
+  height: 7px;
+  width: 24px;
+  top: 236px;
+  left: 281px;
+  background-color: black;
+  transform: rotate(-20deg);
+}
+.mod-stewie__mouth--nine {
+  height: 20px;
+  width: 32px;
+  top: 237px;
+  left: 271px;
+  background-color: black;
+}
+.mod-stewie__mouth--ten {
+  width: 15px;
+  height: 4px;
+  background-color: #F78CAA;
+  border-radius: 100%;
+  top: 272px;
+  left: 288px;
+  transform: rotate(-33deg);
 }
 .mod-title {
   background-color: lightyellow;

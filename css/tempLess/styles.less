@@ -23,6 +23,7 @@ Stewie Griffin
 
 @color-skin: #FAD7BB;
 @color-white: #FFFFFF;
+@color-tongue: #F78CAA;
 
 body {
     margin: 0;
@@ -352,26 +353,26 @@ body {
     width: 100%;
     top: 0;
 
-      &--first {
-        height: 3px;
-        width: 25px;
-        background-color: @color-black;
-        border-radius: 0 40% 40% 0;
-        top: 199px;
-        left: 235px;
-        transform: rotate(46deg);
-      }
-
-      &--second {
-        height: 3px;
-        width: 40px;
-        background-color: @color-black;
-        border-radius: 40% 0 0 40%;
-        top: 176px;
-        left: 232px;
-        transform: rotate(130deg);
-      }
+    &--first {
+      height: 3px;
+      width: 25px;
+      background-color: @color-black;
+      border-radius: 0 40% 40% 0;
+      top: 199px;
+      left: 235px;
+      transform: rotate(46deg);
     }
+
+    &--second {
+      height: 3px;
+      width: 40px;
+      background-color: @color-black;
+      border-radius: 40% 0 0 40%;
+      top: 176px;
+      left: 232px;
+      transform: rotate(130deg);
+    }
+  }
 
   &__mouth {
     position: absolute;
@@ -418,21 +419,64 @@ body {
     }
 
     &--five {
-      width: 30px;
-      top: 10px;
-      left: 264px;
-      transform: rotate(120deg);
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 33px 33px 0 0;
+      border-color: @color-black transparent transparent transparent;
+      top: 226px;
+      left: 303px;
+      transform: rotate(-27deg);
     }
 
     &--six {
-      width: 33px;
-      top: 13px;
-      left: 332px;
-      transform: rotate(130deg);
+      width: 55px;
+      height: 25px;
+      border-radius: 90px 90px 0 0;
+      background-color: @color-black;
+      top: 252.5px;
+      left: 268px;
+      transform: rotate(140deg);
+    }
+
+    &--seven {
+      height: 46px;
+      width: 22px;
+      top: 237px;
+      left: 264px;
+      background-color: @color-black;
+    }
+
+    &--eight {
+      height: 7px;
+      width: 24px;
+      top: 236px;
+      left: 281px;
+      background-color: @color-black;
+      transform: rotate(-20deg);
+    }
+
+    &--nine {
+      height: 20px;
+      width: 32px;
+      top: 237px;
+      left: 271px;
+      background-color: @color-black;
+    }
+
+    &--ten {
+      width: 15px;
+      height: 4px;
+      background-color: @color-tongue;
+      border-radius: 100%;
+      top: 272px;
+      left: 288px;
+      transform: rotate(-33deg);
     }
   }
-
 }
+
+
 .mod-title {
   background-color: @color-light-yellow;
   border-radius: @border-radius-size;
