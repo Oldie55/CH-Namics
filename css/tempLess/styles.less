@@ -2,29 +2,35 @@
 Namics Mitarbeiter
  */
 
-@color-dark-blue: #0B3861;
-@color-black: black;
-@color-blue: #0080FF;
-@color-light-blue: #A9F5F2;
-@color-pink: #F781D8;
-@color-light-pink: #F5A9BC;
-@color-purple: #AC58FA;
-@color-red: #ff0002;
-@color-dark-red: darkred;
-@color-light-gray: #F2F2F2;
-@color-light-yellow: lightyellow;
-@color-light-brown: peru;
-@color-light-green: #BCF5A9;
-
-
-/*
-Stewie Griffin
- */
-
-@color-skin: #FAD7BB;
 @color-white: #FFFFFF;
-@color-tongue: #F78CAA;
+@color-black: black;
+@color-blue-1: #A9F5F2;
+@color-blue-2: #0080FF;
+@color-blue-3: #0B3861;
+@color-pink-1: #FAD7BB;
+@color-pink-2: #F5A9BC;
+@color-pink-3: #F78CAA;
+@color-pink-4: #F781D8;
+@color-purple-1: #AC58FA;
+@color-red-1: #ff0002;
+@color-red-2: darkred;
+@color-gray: #F2F2F2;
+@color-yellow-1: lightyellow;
+@color-brown-1: peru;
+@color-green-1: #BCF5A9;
 
+@color-gradient-blue-light-r: linear-gradient(to left, #0080FF, #A9F5F2 70%);
+@color-gradient-blue-light-l: linear-gradient(to right, #0080FF, #A9F5F2 70%);
+@color1: #3C3C3C;
+@lens-height: 120px;
+@lens-width: 220px;
+@lens-rotate: 2deg;
+@nose-width: 50px;
+@total-width: @lens-width*2 + @nose-width + 10px;
+@lens-background-1: linear-gradient(to bottom, #4DE2DC, #3888D1 70%);
+@lens-background-2: linear-gradient(to bottom, #ff7660, #ff427d 70%);
+@left-lens-border-radius: 12px 12px 33px 29px;
+@right-lens-border-radius: 12px 12px 29px 33px;
 body {
     margin: 0;
     background-color: @color-white;
@@ -35,11 +41,19 @@ body {
     margin: 0 auto;
 }
 @border-radius-size: 20px;
+@keyframes sound {
+  0%   {background: #FF0000;}
+  20%  {background: #F4FA58;}
+  40%  {background: #64FE2E;}
+  60%  {background: #58FAF4;}
+  80% {background: #FE2EF7;}
+  100% {background: #64FE2E;}
+}
 .mod-stewie {
   position: relative;
   height: 350px;
   width: 600px;
-  background-color: @color-skin;
+  background-color: @color-pink-1;
   border-radius: 50%;
   margin: 500px auto 0 auto;
   border: 3px @color-black solid;
@@ -100,7 +114,7 @@ body {
       height: 52px;
       width: 104px;
       border-radius: 90px 90px 0 0;
-      background: @color-skin;
+      background: @color-pink-1;
       border-bottom: 3px @color-black solid;
       left: 3px;
       top: 3px;
@@ -142,7 +156,7 @@ body {
       left: -30px;
       height: 45px;
       width: 45px;
-      background-color: @color-skin;
+      background-color: @color-pink-1;
       border-radius: 50%;
       border: 3px @color-black solid;
     }
@@ -152,7 +166,7 @@ body {
       height: 33px;
       width: 33px;
       border-radius: 50%;
-      background-color: @color-skin;
+      background-color: @color-pink-1;
     }
 
     &--left-three {
@@ -171,7 +185,7 @@ body {
       right: -30px;
       height: 45px;
       width: 45px;
-      background-color: @color-skin;
+      background-color: @color-pink-1;
       border-radius: 50%;
       border: 3px @color-black solid;
     }
@@ -182,7 +196,7 @@ body {
       height: 33px;
       width: 33px;
       border-radius: 50%;
-      background-color: @color-skin;
+      background-color: @color-pink-1;
     }
 
     &--right-three {
@@ -400,8 +414,8 @@ body {
         width: 25px;
         background-color: @color-black;
         border-radius: 0 40% 40% 0;
-        top: 199px;
-        left: 235px;
+        top: 184px;
+        left: 265px;
         transform: rotate(46deg);
       }
 
@@ -410,8 +424,8 @@ body {
         width: 40px;
         background-color: @color-black;
         border-radius: 40% 0 0 40%;
-        top: 176px;
-        left: 232px;
+        top: 161px;
+        left: 262px;
         transform: rotate(130deg);
       }
     }
@@ -509,7 +523,7 @@ body {
       &--ten {
         width: 15px;
         height: 4px;
-        background-color: @color-tongue;
+        background-color: @color-pink-3;
         border-radius: 100%;
         top: 272px;
         left: 288px;
@@ -530,14 +544,135 @@ body {
     }
   }
 
-  &__button {
+  html {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: #FFAA78;
+  }
 
-    &--hat {
+  *, *:before, *:after {
+    box-sizing: border-box;
+  }
 
+  &__glasses {
+    display: none;
+    position: absolute;
+    width: @total-width;
+    height: @lens-height;
+    top: 97px;
+    left: 37px;
+
+    &:hover .glass {
+      background-image: @lens-background-2;
+    }
+
+    .g-top {
+      position: absolute;
+      height: 15px;
+      width: @total-width;
+      background-color: @color1;
+      top: 5px;
+      left: -5px;
+      border-radius: 5px;
+    }
+
+    .glass {
+      position: absolute;
+      height: @lens-height;
+      width: @lens-width;
+      background-image: @lens-background-1;
+      border: 10px solid @color1;
+      top: 0;
+      animation-name: sound;
+      animation-duration: 0.1s;
+      animation-iteration-count: 50;
+    }
+
+    .g-left {
+      left: 0;
+      transform: rotate(@lens-rotate);
+      border-radius: @left-lens-border-radius;
+    }
+    .g-right {
+      left: @lens-width + @nose-width;
+      transform: rotate(-@lens-rotate);
+      border-radius: @right-lens-border-radius;
+    }
+
+  }
+
+  &__headphones {
+    display: none;
+  }
+
+    &__headphone {
+      &__buegel {
+        position: absolute;
+
+        &--round {
+          width: 760px;
+          height: 350px;
+          border-top-left-radius: 420px;
+          border-top-right-radius: 420px;
+          border: 20px solid @color-blue-3;
+          border-bottom: 0;
+          top: -220px;
+          left: -83px;
+        }
+
+        &--one {
+          width: 20px;
+          height: 100px;
+          background: @color-blue-3;
+          top: 130px;
+          left: -83px;
+        }
+
+        &--two {
+          width: 20px;
+          height: 100px;
+          background: @color-blue-3;
+          top: 130px;
+          right: -83px;
+        }
+      }
+
+      &__polster {
+        position: absolute;
+
+        &--links {
+          height: 200px;
+          width: 60px;
+          background-color: @color-blue-1;
+          border-radius: 30px;
+          left: -60px;
+          transform: rotate(0.5deg);
+          top: 64px;
+          animation-name: sound;
+          animation-duration: 0.1s;
+          animation-iteration-count: 50;
+
+        }
+
+        &--rechts {
+          height: 200px;
+          width: 60px;
+          background: @color-blue-1;
+          border-radius: 30px;
+          top: 64px;
+          right: -60px;
+          transform: rotate(-0.5deg);
+          animation-name: sound;
+          animation-duration: 0.1s;
+          animation-iteration-count: 50;
+        }
+      }
     }
   }
 
-}
 
 .state-mod-stewie--with-hat {
   .mod-stewie {
@@ -549,14 +684,203 @@ body {
   }
 }
 
+.state-mod-stewie--with-glasses {
+  .mod-stewie {
+    &__glasses {
+      display: block;
+    }
+
+  }
+
+}.state-mod-stewie--with-headphones {
+  .mod-stewie {
+    &__headphones {
+      display: block;
+    }
+
+  }
+}
+
+.state-mod-stewie--with-mustache {
+  .mod-stewie {
+    &__mustache {
+      &__item {
+        position: absolute;
+        width: 85px;
+        &--one {
+          height: 20px;
+          background-color: @color-black;
+          border-radius: 40%;
+          top: 198px;
+          left: 198px;
+        }
+
+        &--two {
+          height: 20px;
+          background-color: @color-black;
+          border-radius: 40%;
+          top: 198px;
+          left: 281px;
+
+        }
+
+        &--three {
+          transform: rotate(105deg);
+          height: 17px;
+          background-color: @color-black;
+          border-radius: 50% 100% 100% 0;
+          top: 240px;
+          left: 152px;
+        }
+
+        &--four {
+          transform: rotate(75deg);
+          height: 17px;
+          background-color: @color-black;
+          border-radius: 0 100% 100% 0;
+          top: 240px;
+          right: 182px;
+
+        }
+
+      }
+    }
+  }
+}
+
+.state-mod-stewie--drunk {
+  &:hover {
+    .mod-stewie__eye__lid {
+      display: none;
+    }
+  }
+  .mod-stewie {
+
+    &__eyes {
+      height: 100%;
+
+    }
+
+    &__eye {
+      position: absolute;
+      height: 110px;
+      width: 110px;
+      top: 100px;
+
+      &--left {
+        left: 55px;
+      }
+
+      &--right {
+        right: 100px;
+        top: 105px;
+      }
+
+      &__white {
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+        border: 3px @color-black solid;
+        background-color: @color-white;
+      }
+
+      &__pupil {
+        height: 12px;
+        width: 12px;
+        border-radius: 50%;
+        background-color: @color-black;
+        position: absolute;
+        top: 46px;
+        left: 28px;
+      }
+
+      &__lid {
+        position: absolute;
+        height: 26px;
+        width: 93px;
+        border-radius: 90px 90px 0 0;
+        background: @color-pink-1;
+        border-bottom: 3px @color-black solid;
+        left: 8px;
+        top: 3px;
+      }
+
+      &__lid--left {
+        position: absolute;
+        height: 38px;
+        width: 100px;
+        border-radius: 90px 90px 0 0;
+        background: @color-pink-1;
+        border-bottom: 3px @color-black solid;
+        left: 5px;
+        top: 3px;
+      }
+
+      &__lid--right-bottom {
+        position: absolute;
+        height: 38px;
+        width: 96px;
+        border-radius: 90px 90px 0 0;
+        background: @color-pink-1;
+        border-bottom: 3px @color-black solid;
+        left: 8px;
+        top: 76px;
+        transform: rotate(180deg);
+      }
+
+      &__brow {
+        position: absolute;
+        height: 4px;
+        width: 80px;
+        background-color: @color-black;
+        border-radius: 100%;
+        top: -25px;
+
+        &--left {
+          left: 20px;
+          top: -13px;
+        }
+
+        &--right {
+          right: 20px;
+          top: -17px;
+        }
+
+      }
+
+      &--border-left {
+        position: absolute;
+        height: 110px;
+        width: 110px;
+        top: 100px;
+        left: 55px;
+        border-radius: 50%;
+        border: 3px @color-black solid;
+      }
+
+      &--border-right {
+        right: 100px;
+        top: 105px;
+        position: absolute;
+        height: 110px;
+        width: 110px;
+        border-radius: 50%;
+        border: 3px @color-black solid;
+      }
+    }
+  }
+}
+
+
+
 .mod-title {
-  background-color: @color-light-yellow;
+  background-color: @color-yellow-1;
   border-radius: @border-radius-size;
 
   &__main {
     font-size: 80px;
     margin-bottom: 15px;
-    color: @color-dark-red;
+    color: @color-red-2;
     text-align: center;
     margin-top: 25px;
   }
@@ -565,7 +889,7 @@ body {
 }
 .mod-zh {
     margin: 0;
-    background-color: @color-light-yellow;
+    background-color: @color-yellow-1;
     padding: 5px;
     border-radius: @border-radius-size;
 
@@ -579,10 +903,10 @@ body {
         width: 100px;
         border-radius: 50%;
         margin-left: 16px;
-        border: 5px @color-light-gray solid;
+        border: 5px @color-gray solid;
 
         &:hover {
-            border: 5px @color-light-brown solid;
+            border: 5px @color-brown-1 solid;
         }
     }
 
@@ -593,18 +917,18 @@ body {
     */
 
     &__list {
-        background-color: @color-light-green;
+        background-color: @color-green-1;
         margin-top: 0;
         margin-bottom: 25px;
         list-style: none;
         border-radius: @border-radius-size;
 
         &--mitte {
-            background-color: @color-light-blue;
+            background-color: @color-blue-1;
         }
 
         &--hinten {
-            background-color: @color-light-pink;
+            background-color: @color-pink-2;
         }
     }
 
@@ -613,22 +937,22 @@ body {
         padding-top: 20px;
 
         &:hover {
-            background-color: @color-light-gray;
+            background-color: @color-gray;
         }
     }
 
     &__member-name {
-        color: @color-blue;
+        color: @color-blue-2;
         font-size: 30px;
         margin: 15px 0 0 0;
 
         &--lady {
-            color: @color-pink;
+            color: @color-pink-4;
         }
     }
 
     &__member-description {
-        color: @color-purple;
+        color: @color-purple-1;
         font-size: 15px;
         margin-top: 0;
         margin-bottom: 0;
@@ -641,7 +965,7 @@ body {
         }
 
         &--no-info {
-            color: @color-red;
+            color: @color-red-1;
         }
     }
 
@@ -658,15 +982,15 @@ body {
         border-radius: @border-radius-size;
 
         &--vorne {
-            background-color: @color-light-green;
+            background-color: @color-green-1;
         }
 
         &--mitte {
-            background-color: @color-light-blue;
+            background-color: @color-blue-1;
         }
 
         &--hinten {
-            background-color: @color-light-pink;
+            background-color: @color-pink-2;
         }
     }
 
