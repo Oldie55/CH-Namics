@@ -72,7 +72,7 @@ body {
   width: 600px;
   background-color: #FAD7BB;
   border-radius: 50%;
-  margin: 100px auto 0 auto;
+  margin: 500px auto 0 auto;
   border: 3px black solid;
 }
 .mod-stewie:hover .mod-stewie__eye__lid {
@@ -374,13 +374,10 @@ body {
   left: 560px;
   transform: rotate(46deg);
 }
-.mod-stewie__nose {
+.mod-stewie__nose__item {
   position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
 }
-.mod-stewie__nose--first {
+.mod-stewie__nose__item--first {
   height: 3px;
   width: 25px;
   background-color: black;
@@ -389,7 +386,7 @@ body {
   left: 235px;
   transform: rotate(46deg);
 }
-.mod-stewie__nose--second {
+.mod-stewie__nose__item--second {
   height: 3px;
   width: 40px;
   background-color: black;
@@ -398,13 +395,10 @@ body {
   left: 232px;
   transform: rotate(130deg);
 }
-.mod-stewie__mouth {
+.mod-stewie__mouth__item {
   position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
 }
-.mod-stewie__mouth--one {
+.mod-stewie__mouth__item--one {
   height: 3px;
   width: 18px;
   background-color: black;
@@ -413,7 +407,7 @@ body {
   left: 235px;
   transform: rotate(140deg);
 }
-.mod-stewie__mouth--two {
+.mod-stewie__mouth__item--two {
   height: 3px;
   width: 35px;
   background-color: black;
@@ -421,7 +415,7 @@ body {
   top: 237px;
   left: 237px;
 }
-.mod-stewie__mouth--three {
+.mod-stewie__mouth__item--three {
   height: 3px;
   width: 13px;
   background-color: black;
@@ -430,7 +424,7 @@ body {
   left: 254px;
   transform: rotate(46deg);
 }
-.mod-stewie__mouth--four {
+.mod-stewie__mouth__item--four {
   height: 3px;
   width: 20px;
   background-color: black;
@@ -438,7 +432,7 @@ body {
   top: 280px;
   left: 255px;
 }
-.mod-stewie__mouth--five {
+.mod-stewie__mouth__item--five {
   width: 0;
   height: 0;
   border-style: solid;
@@ -448,7 +442,7 @@ body {
   left: 303px;
   transform: rotate(-27deg);
 }
-.mod-stewie__mouth--six {
+.mod-stewie__mouth__item--six {
   width: 55px;
   height: 25px;
   border-radius: 90px 90px 0 0;
@@ -457,14 +451,14 @@ body {
   left: 268px;
   transform: rotate(140deg);
 }
-.mod-stewie__mouth--seven {
+.mod-stewie__mouth__item--seven {
   height: 46px;
   width: 22px;
   top: 237px;
   left: 264px;
   background-color: black;
 }
-.mod-stewie__mouth--eight {
+.mod-stewie__mouth__item--eight {
   height: 7px;
   width: 24px;
   top: 236px;
@@ -472,14 +466,14 @@ body {
   background-color: black;
   transform: rotate(-20deg);
 }
-.mod-stewie__mouth--nine {
+.mod-stewie__mouth__item--nine {
   height: 20px;
   width: 32px;
   top: 237px;
   left: 271px;
   background-color: black;
 }
-.mod-stewie__mouth--ten {
+.mod-stewie__mouth__item--ten {
   width: 15px;
   height: 4px;
   background-color: #F78CAA;
@@ -487,6 +481,17 @@ body {
   top: 272px;
   left: 288px;
   transform: rotate(-33deg);
+}
+.mod-stewie__image--hat {
+  display: none;
+  position: absolute;
+  height: 200px;
+  width: 700px;
+  top: -100px;
+  left: -54px;
+}
+.state-mod-stewie--with-hat .mod-stewie__image--hat {
+  display: block;
 }
 .mod-title {
   background-color: lightyellow;
