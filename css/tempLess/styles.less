@@ -1,7 +1,3 @@
-/*
-Namics Mitarbeiter
- */
-
 @color-white: #FFFFFF;
 @color-black: black;
 @color-blue-1: #A9F5F2;
@@ -18,10 +14,10 @@ Namics Mitarbeiter
 @color-yellow-1: lightyellow;
 @color-brown-1: peru;
 @color-green-1: #BCF5A9;
+@color-orange: #ff7660;
+@color-rosa-1: #ff427d;
+@color-rosa-2: #7A203C;
 
-@color-gradient-blue-light-r: linear-gradient(to left, #0080FF, #A9F5F2 70%);
-@color-gradient-blue-light-l: linear-gradient(to right, #0080FF, #A9F5F2 70%);
-@color-gradient-green-yellow: linear-gradient(to bottom right, #2EFE2E, #FFFF00 70%);
 
 //
 //this makes bla bla
@@ -173,6 +169,32 @@ body {
   margin: 250px auto 0 auto;
   border: 3px @color-black solid;
 
+  &:hover {
+    .glass {
+      background-image: @lens-background-2;
+    }
+
+    .mod-stewie__headphone__polster--links {
+      .gradient(180deg, @color-orange, @color-rosa-1, 70%);
+    }
+
+    .mod-stewie__headphone__polster--rechts {
+      .gradient(0deg, @color-orange, @color-rosa-1, 70%);
+    }
+
+    .mod-stewie__headphone__buegel--round {
+      border-color: @color-rosa-2;
+      background-color: transparent;
+    }
+
+    .mod-stewie__headphone__buegel--one {
+      background-color: @color-rosa-2;
+    }
+
+    .mod-stewie__headphone__buegel--two {
+      background-color: @color-rosa-2;
+    }
+  }
 
 
 /*
@@ -683,9 +705,7 @@ body {
     top: 97px;
     left: 37px;
 
-    &:hover .glass {
-      background-image: @lens-background-2;
-    }
+
 
     .g-top {
       position: absolute;
@@ -764,7 +784,7 @@ body {
         &--links {
           height: 200px;
           width: 60px;
-          background: @color-blue-1;
+          .gradient(0deg, @color-blue-2, @color-blue-1, 100%);
           border-radius: 30px;
           left: -60px;
           transform: rotate(0.5deg);
@@ -778,7 +798,7 @@ body {
         &--rechts {
           height: 200px;
           width: 60px;
-          background: @color-blue-1;
+          .gradient(180deg, @color-blue-2, @color-blue-1, 100%);
           border-radius: 30px;
           top: 64px;
           right: -60px;

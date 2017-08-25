@@ -1,6 +1,3 @@
-/*
-Namics Mitarbeiter
- */
 .absolutePosition {
   position: absolute;
   top: 0;
@@ -130,6 +127,35 @@ body {
     }
   }
 */
+}
+.mod-stewie:hover .glass {
+  background-image: linear-gradient(to bottom, #ff7660, #ff427d 70%);
+}
+.mod-stewie:hover .mod-stewie__headphone__polster--links {
+  background-color: #ff7660;
+  background: -webkit-gradient(linear, 180deg, 180deg, from(#ff7660), to(#ff427d));
+  background: -webkit-linear-gradient(180deg, #ff7660, #ff427d 70%);
+  background: -moz-linear-gradient(180deg, #ff7660, #ff427d 70%);
+  background: -ms-linear-gradient(180deg, #ff7660, #ff427d 70%);
+  background: -o-linear-gradient(180deg, #ff7660, #ff427d 70%);
+}
+.mod-stewie:hover .mod-stewie__headphone__polster--rechts {
+  background-color: #ff7660;
+  background: -webkit-gradient(linear, 0deg, 0deg, from(#ff7660), to(#ff427d));
+  background: -webkit-linear-gradient(0deg, #ff7660, #ff427d 70%);
+  background: -moz-linear-gradient(0deg, #ff7660, #ff427d 70%);
+  background: -ms-linear-gradient(0deg, #ff7660, #ff427d 70%);
+  background: -o-linear-gradient(0deg, #ff7660, #ff427d 70%);
+}
+.mod-stewie:hover .mod-stewie__headphone__buegel--round {
+  border-color: #7A203C;
+  background-color: transparent;
+}
+.mod-stewie:hover .mod-stewie__headphone__buegel--one {
+  background-color: #7A203C;
+}
+.mod-stewie:hover .mod-stewie__headphone__buegel--two {
+  background-color: #7A203C;
 }
 .mod-stewie__eyes {
   height: 100%;
@@ -562,9 +588,6 @@ body {
   top: 97px;
   left: 37px;
 }
-.mod-stewie__glasses:hover .glass {
-  background-image: linear-gradient(to bottom, #ff7660, #ff427d 70%);
-}
 .mod-stewie__glasses .g-top {
   position: absolute;
   height: 15px;
@@ -631,7 +654,12 @@ body {
 .mod-stewie__headphone__polster--links {
   height: 200px;
   width: 60px;
-  background: #A9F5F2;
+  background-color: #0080FF;
+  background: -webkit-gradient(linear, 0deg, 0deg, from(#0080FF), to(#A9F5F2));
+  background: -webkit-linear-gradient(0deg, #0080FF, #A9F5F2 100%);
+  background: -moz-linear-gradient(0deg, #0080FF, #A9F5F2 100%);
+  background: -ms-linear-gradient(0deg, #0080FF, #A9F5F2 100%);
+  background: -o-linear-gradient(0deg, #0080FF, #A9F5F2 100%);
   border-radius: 30px;
   left: -60px;
   transform: rotate(0.5deg);
@@ -643,7 +671,12 @@ body {
 .mod-stewie__headphone__polster--rechts {
   height: 200px;
   width: 60px;
-  background: #A9F5F2;
+  background-color: #0080FF;
+  background: -webkit-gradient(linear, 180deg, 180deg, from(#0080FF), to(#A9F5F2));
+  background: -webkit-linear-gradient(180deg, #0080FF, #A9F5F2 100%);
+  background: -moz-linear-gradient(180deg, #0080FF, #A9F5F2 100%);
+  background: -ms-linear-gradient(180deg, #0080FF, #A9F5F2 100%);
+  background: -o-linear-gradient(180deg, #0080FF, #A9F5F2 100%);
   border-radius: 30px;
   top: 64px;
   right: -60px;

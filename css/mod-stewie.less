@@ -13,6 +13,32 @@
   margin: 250px auto 0 auto;
   border: 3px @color-black solid;
 
+  &:hover {
+    .glass {
+      background-image: @lens-background-2;
+    }
+
+    .mod-stewie__headphone__polster--links {
+      .gradient(180deg, @color-orange, @color-rosa-1, 70%);
+    }
+
+    .mod-stewie__headphone__polster--rechts {
+      .gradient(0deg, @color-orange, @color-rosa-1, 70%);
+    }
+
+    .mod-stewie__headphone__buegel--round {
+      border-color: @color-rosa-2;
+      background-color: transparent;
+    }
+
+    .mod-stewie__headphone__buegel--one {
+      background-color: @color-rosa-2;
+    }
+
+    .mod-stewie__headphone__buegel--two {
+      background-color: @color-rosa-2;
+    }
+  }
 
 
 /*
@@ -523,9 +549,7 @@
     top: 97px;
     left: 37px;
 
-    &:hover .glass {
-      background-image: @lens-background-2;
-    }
+
 
     .g-top {
       position: absolute;
@@ -604,7 +628,7 @@
         &--links {
           height: 200px;
           width: 60px;
-          background: @color-blue-1;
+          .gradient(0deg, @color-blue-2, @color-blue-1, 100%);
           border-radius: 30px;
           left: -60px;
           transform: rotate(0.5deg);
@@ -618,7 +642,7 @@
         &--rechts {
           height: 200px;
           width: 60px;
-          background: @color-blue-1;
+          .gradient(180deg, @color-blue-2, @color-blue-1, 100%);
           border-radius: 30px;
           top: 64px;
           right: -60px;
