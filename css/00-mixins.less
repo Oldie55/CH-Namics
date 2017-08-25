@@ -1,0 +1,27 @@
+//
+//this makes bla bla
+
+.gradient (@direction: top, @startColor: black, @endColor: white, @prozent: 70%) {
+  background-color: @startColor;
+  background: -webkit-gradient(linear, @direction, @direction, from(@startColor), to(@endColor));
+  background: -webkit-linear-gradient(@direction, @startColor, @endColor @prozent);
+  background: -moz-linear-gradient(@direction, @startColor, @endColor @prozent);
+  background: -ms-linear-gradient(@direction, @startColor, @endColor @prozent);
+  background: -o-linear-gradient(@direction, @startColor, @endColor @prozent);
+}
+
+
+.cyrcle (@r1, @r2, @r3, @r4) {
+  border-radius: @r1 @r2 @r3 @r4;
+}
+
+
+
+
+.absolutePosition {
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}

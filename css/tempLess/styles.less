@@ -22,6 +22,35 @@ Namics Mitarbeiter
 @color-gradient-blue-light-r: linear-gradient(to left, #0080FF, #A9F5F2 70%);
 @color-gradient-blue-light-l: linear-gradient(to right, #0080FF, #A9F5F2 70%);
 @color-gradient-green-yellow: linear-gradient(to bottom right, #2EFE2E, #FFFF00 70%);
+
+//
+//this makes bla bla
+
+.gradient (@direction: top, @startColor: black, @endColor: white, @prozent: 70%) {
+  background-color: @startColor;
+  background: -webkit-gradient(linear, @direction, @direction, from(@startColor), to(@endColor));
+  background: -webkit-linear-gradient(@direction, @startColor, @endColor @prozent);
+  background: -moz-linear-gradient(@direction, @startColor, @endColor @prozent);
+  background: -ms-linear-gradient(@direction, @startColor, @endColor @prozent);
+  background: -o-linear-gradient(@direction, @startColor, @endColor @prozent);
+}
+
+
+.cyrcle (@r1, @r2, @r3, @r4) {
+  border-radius: @r1 @r2 @r3 @r4;
+}
+
+
+
+
+.absolutePosition {
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
 @color1: #3C3C3C;
 @lens-height: 120px;
 @lens-width: 220px;
@@ -103,7 +132,7 @@ body {
   }
 }
 
-
+/*
 @keyframes experiment {
 
   0%   {background: #F6E3CE;}
@@ -128,6 +157,13 @@ body {
   95% {background: #FF00BF;}
   100% {background: #FE2E9A;}
 }
+*/
+
+
+
+
+
+
 .mod-stewie {
   position: relative;
   height: 350px;
@@ -137,6 +173,9 @@ body {
   margin: 250px auto 0 auto;
   border: 3px @color-black solid;
 
+
+
+/*
   &:hover {
     .mod-stewie__eye__lid {
       height: 104px;
@@ -146,7 +185,7 @@ body {
       transition: height 0.05s ease-in;
     }
   }
-
+*/
   &__eyes {
     height: 100%;
 
@@ -191,7 +230,7 @@ body {
       position: absolute;
       height: 52px;
       width: 104px;
-      border-radius: 90px 90px 0 0;
+      .cyrcle(90px, 90px, 0, 0);
       background: @color-pink-1;
       border-bottom: 3px @color-black solid;
       left: 3px;
@@ -235,7 +274,7 @@ body {
       left: -30px;
       height: 45px;
       width: 45px;
-      background-color: @color-pink-1;
+      background: @color-pink-1;
       border-radius: 50%;
       border: 3px @color-black solid;
     }
@@ -251,7 +290,7 @@ body {
     &--left-three {
       width: 12px;
       height: 8px;
-      border-radius: 90px 90px 0 0;
+      .cyrcle(90px, 90px, 0, 0);
       background-color: transparent;
       border-top: 4px @color-black solid;
       transform: rotate(35deg);
@@ -281,7 +320,7 @@ body {
     &--right-three {
       width: 16px;
       height: 8px;
-      border-radius: 90px 90px 0 0;
+      .cyrcle(90px, 90px, 0, 0);
       background-color: transparent;
       border-top: 4px @color-black solid;
       transform: rotate(-15deg);
@@ -368,7 +407,7 @@ body {
     &--eins {
       width: 15px;
       height: 8px;
-      border-radius: 90px 90px 0 0;
+      .cyrcle(90px, 90px, 0, 0);
       background-color: transparent;
       border-top: 4px @color-black solid;
       border-left: 4px @color-black solid;
@@ -381,7 +420,7 @@ body {
     &--zwei {
       width: 17px;
       height: 9px;
-      border-radius: 90px 90px 0 0;
+      .cyrcle(90px, 90px, 0, 0);
       background-color: transparent;
       border-top: 4px @color-black solid;
       border-left: 4px @color-black solid;
@@ -394,7 +433,7 @@ body {
     &--drei {
       width: 17px;
       height: 9px;
-      border-radius: 90px 90px 0 0;
+      .cyrcle(90px, 90px, 0, 0);
       background-color: transparent;
       border-top: 4px @color-black solid;
       border-left: 4px @color-black solid;
@@ -407,7 +446,7 @@ body {
     &--vier {
       width: 17px;
       height: 8px;
-      border-radius: 90px 90px 0 0;
+      .cyrcle(90px, 90px, 0, 0);
       background-color: transparent;
       border-top: 4px @color-black solid;
       border-left: 4px @color-black solid;
@@ -420,7 +459,7 @@ body {
     &--fuenf {
       width: 19px;
       height: 8px;
-      border-radius: 90px 90px 0 0;
+      .cyrcle(90px, 90px, 0, 0);
       background-color: transparent;
       border-top: 4px @color-black solid;
       border-left: 4px @color-black solid;
@@ -433,7 +472,7 @@ body {
     &--sechs {
       width: 18px;
       height: 8px;
-      border-radius: 90px 90px 0 0;
+      .cyrcle(90px, 90px, 0, 0);
       background-color: transparent;
       border-top: 4px @color-black solid;
       border-left: 4px @color-black solid;
@@ -446,7 +485,7 @@ body {
     &--sieben {
       width: 18px;
       height: 8px;
-      border-radius: 90px 90px 0 0;
+      .cyrcle(90px, 90px, 0, 0);
       background-color: transparent;
       border-top: 4px @color-black solid;
       border-left: 4px @color-black solid;
@@ -459,7 +498,7 @@ body {
     &--acht {
       width: 18px;
       height: 7px;
-      border-radius: 90px 90px 0 0;
+      .cyrcle(90px, 90px, 0, 0);
       background-color: transparent;
       border-top: 4px @color-black solid;
       border-left: 4px @color-black solid;
@@ -472,7 +511,7 @@ body {
     &--neun {
       width: 18px;
       height: 8px;
-      border-radius: 90px 90px 0 0;
+      .cyrcle(90px, 90px, 0, 0);
       background-color: transparent;
       border-top: 4px @color-black solid;
       border-left: 4px @color-black solid;
@@ -567,7 +606,7 @@ body {
       &--six {
         width: 55px;
         height: 25px;
-        border-radius: 90px 90px 0 0;
+        .cyrcle(90px, 90px, 0, 0);
         background-color: @color-black;
         top: 252.5px;
         left: 268px;
@@ -877,7 +916,7 @@ body {
         position: absolute;
         height: 26px;
         width: 93px;
-        border-radius: 90px 90px 0 0;
+        .cyrcle(90px, 90px, 0, 0);
         background: @color-pink-1;
         border-bottom: 3px @color-black solid;
         left: 8px;
@@ -888,7 +927,7 @@ body {
         position: absolute;
         height: 38px;
         width: 100px;
-        border-radius: 90px 90px 0 0;
+        .cyrcle(90px, 90px, 0, 0);
         background: @color-pink-1;
         border-bottom: 3px @color-black solid;
         left: 5px;
@@ -899,7 +938,7 @@ body {
         position: absolute;
         height: 38px;
         width: 96px;
-        border-radius: 90px 90px 0 0;
+        .cyrcle(90px, 90px, 0, 0);
         background: @color-pink-1;
         border-bottom: 3px @color-black solid;
         left: 8px;

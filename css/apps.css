@@ -55,6 +55,13 @@ html {
 /*
 Namics Mitarbeiter
  */
+.absolutePosition {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
 body {
   margin: 0;
   background-color: #FFFFFF;
@@ -132,71 +139,32 @@ body {
     left: 70px;
   }
 }
+/*
 @keyframes experiment {
-  0% {
-    background: #F6E3CE;
-  }
-  5% {
-    background: #F3E2A9;
-  }
-  10% {
-    background: #F3F781;
-  }
-  15% {
-    background: #D0FA58;
-  }
-  20% {
-    background: #9AFE2E;
-  }
-  25% {
-    background: #40FF00;
-  }
-  30% {
-    background: #01DF01;
-  }
-  35% {
-    background: #04B431;
-  }
-  40% {
-    background: #088A4B;
-  }
-  45% {
-    background: #0B614B;
-  }
-  50% {
-    background: #0B3B39;
-  }
-  55% {
-    background: #0A2229;
-  }
-  60% {
-    background: #071019;
-  }
-  65% {
-    background: #0A122A;
-  }
-  70% {
-    background: #0B0B3B;
-  }
-  75% {
-    background: #210B61;
-  }
-  80% {
-    background: #4B088A;
-  }
-  85% {
-    background: #8904B1;
-  }
-  90% {
-    background: #DF01D7;
-  }
-  95% {
-    background: #FF00BF;
-  }
-  100% {
-    background: #FE2E9A;
-  }
+
+  0%   {background: #F6E3CE;}
+  5% {background: #F3E2A9;}
+  10% {background: #F3F781;}
+  15%   {background: #D0FA58;}
+  20%  {background: #9AFE2E;}
+  25%  {background: #40FF00;}
+  30%  {background: #01DF01;}
+  35% {background: #04B431;}
+  40% {background: #088A4B;}
+  45%   {background: #0B614B;}
+  50%  {background: #0B3B39;}
+  55%  {background: #0A2229;}
+  60%  {background: #071019;}
+  65% {background: #0A122A;}
+  70% {background: #0B0B3B;}
+  75%   {background: #210B61;}
+  80%  {background: #4B088A;}
+  85%  {background: #8904B1;}
+  90%  {background: #DF01D7;}
+  95% {background: #FF00BF;}
+  100% {background: #FE2E9A;}
 }
+*/
 .mod-stewie {
   position: relative;
   height: 350px;
@@ -205,13 +173,17 @@ body {
   border-radius: 50%;
   margin: 250px auto 0 auto;
   border: 3px black solid;
-}
-.mod-stewie:hover .mod-stewie__eye__lid {
-  height: 104px;
-  width: 104px;
-  border-radius: 50%;
-  border-bottom: 0;
-  transition: height 0.05s ease-in;
+  /*
+  &:hover {
+    .mod-stewie__eye__lid {
+      height: 104px;
+      width: 104px;
+      border-radius: 50%;
+      border-bottom: 0;
+      transition: height 0.05s ease-in;
+    }
+  }
+*/
 }
 .mod-stewie__eyes {
   height: 100%;
@@ -287,7 +259,7 @@ body {
   left: -30px;
   height: 45px;
   width: 45px;
-  background-color: #FAD7BB;
+  background: #FAD7BB;
   border-radius: 50%;
   border: 3px black solid;
 }
