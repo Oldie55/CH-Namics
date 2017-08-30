@@ -189,7 +189,6 @@ body {
   position: absolute;
   top: 50px;
   left: 70px;
-  animation: pupil-move 5s infinite;
 }
 .mod-stewie__eye__lid {
   position: absolute;
@@ -200,7 +199,6 @@ body {
   border-bottom: 3px black solid;
   left: 3px;
   top: 3px;
-  animation: eyes-close 5s infinite;
 }
 .mod-stewie__eye__brow {
   position: absolute;
@@ -727,6 +725,12 @@ body {
   border-radius: 0 100% 100% 0;
   top: 240px;
   right: 182px;
+}
+.state-mod-stewie--eyes-movement .mod-stewie__eye__pupil {
+  animation: pupil-move 5s infinite;
+}
+.state-mod-stewie--eyes-movement .mod-stewie__eye__lid {
+  animation: eyes-close 5s infinite;
 }
 .state-mod-stewie--drunk:hover .mod-stewie__eye__lid {
   display: none;

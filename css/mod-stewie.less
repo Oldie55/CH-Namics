@@ -83,7 +83,6 @@
       position: absolute;
       top: 50px;
       left: 70px;
-      animation: pupil-move 5s infinite;
     }
 
     &__lid {
@@ -95,7 +94,6 @@
       border-bottom: 3px @color-black solid;
       left: 3px;
       top: 3px;
-      animation: eyes-close 5s infinite;
     }
 
     &__brow {
@@ -722,6 +720,20 @@
       }
     }
   }
+}
+
+.state-mod-stewie--eyes-movement {
+    .mod-stewie {
+        &__eye {
+            &__pupil {
+                animation: pupil-move 5s infinite;
+            }
+
+            &__lid {
+                animation: eyes-close 5s infinite;
+            }
+        }
+    }
 }
 
 .state-mod-stewie--drunk {
