@@ -8,26 +8,50 @@
     <meta name="description" content="The HTML5 Herald">
     <meta name="author" content="SitePoint">
     <link href="css/apps.css" rel="stylesheet" type="text/css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
 <div class="container">
     <ul>
         <li>
-            <a id="js-state-change-drunk" data="drunk" href="#">Drunk</a>
+            <a>
+                <div class="onoffswitch float-left off" id="js-state-change-drunk" data="drunk">
+                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch">
+                    <label class="onoffswitch-label" for="myonoffswitch">
+                        <span class="onoffswitch-inner"></span>
+                        <span class="onoffswitch-switch"></span>
+                    </label>
+                </div>
+                <h1 class="float-right">Drunk</h1>
+            </a>
+            <br class="endfloat">
         </li>
         <li>
-            <a href="#">With Hat</a>
+            <a id="js-state-change-headphones" data="headphones" href="#">
+                <h1 class="float-right">Headphones</h1>
+
+            </a>
+            <br class="endfloat">
         </li>
         <li>
-            <a href="#">with Mustache</a>
+            <a id="js-state-change-glasses" data="glasses" href="#">
+                <h1 class="float-right">Glasses</h1>
+
+            </a>
+            <br class="endfloat">
         </li>
         <li>
-            <a href="#">with glasses</a>
+            <a id="js-state-change-mustache" data="mustache" href="#">
+                <h1 class="float-right">Mustache</h1>
+
+            </a>
+            <br class="endfloat">
         </li>
         <li>
-            <a href="#">with headphones</a>
+            <a id="js-state-change-hat" data="hat" href="#">
+                <h1 class="float-right">Hat</h1>
+
+            </a>
+            <br class="endfloat">
         </li>
     </ul>
     <div class="mod-stewie">
@@ -98,9 +122,6 @@
             <div class="mod-stewie__mustache__item mod-stewie__mustache__item--three"></div>
             <div class="mod-stewie__mustache__item mod-stewie__mustache__item--four"></div>
         </div>
-        <div class="mod-stewie__images">
-            <img class="mod-stewie__image mod-stewie__image--hat" src="pictures/stewie-hat.png">
-        </div>
         <div class="mod-stewie__glasses">
             <div class="g-top "></div>
             <div class="g-left glass"></div>
@@ -112,6 +133,9 @@
             <div class="mod-stewie__headphone__buegel mod-stewie__headphone__buegel--two"></div>
             <div class="mod-stewie__headphone__polster mod-stewie__headphone__polster--links"></div>
             <div class="mod-stewie__headphone__polster mod-stewie__headphone__polster--rechts"></div>
+        </div>
+        <div class="mod-stewie__images">
+            <img class="mod-stewie__image mod-stewie__image--hat" src="pictures/stewie-hat.png">
         </div>
     </div>
     </div>
