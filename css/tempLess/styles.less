@@ -19,9 +19,6 @@
 @color-rosa-2: #7A203C;
 
 
-//
-//this makes bla bla
-
 .gradient (@direction: top, @startColor: black, @endColor: white, @prozent: 70%) {
   background-color: @startColor;
   background: -webkit-gradient(linear, @direction, @direction, from(@startColor), to(@endColor));
@@ -30,6 +27,17 @@
   background: -ms-linear-gradient(@direction, @startColor, @endColor @prozent);
   background: -o-linear-gradient(@direction, @startColor, @endColor @prozent);
 }
+
+.gradient-advanced (@direction: top, @color1: white, @color2: white, @color3: white, @color4: white, @color5: white, @color6: white) {
+  background-color: @color1;
+  background: -webkit-gradient(linear, @direction, @direction, from(@color1), to(@color6));
+  background: -webkit-linear-gradient(@direction, @color1, @color2, @color3, @color4, @color5, @color6);
+  background: -moz-linear-gradient(@direction, @color1, @color2, @color3, @color4, @color5, @color6);
+  background: -ms-linear-gradient(@direction, @color1, @color2, @color3, @color4, @color5, @color6);
+  background: -o-linear-gradient(@direction, @color1, @color2, @color3, @color4, @color5, @color6);
+}
+
+
 
 
 .cyrcle (@r1, @r2, @r3, @r4) {
@@ -154,12 +162,6 @@ body {
   100% {background: #FE2E9A;}
 }
 */
-
-
-
-
-
-
 .mod-stewie {
   position: relative;
   height: 350px;
